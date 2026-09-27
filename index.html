@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist</title>
+    <!-- swiper css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.css">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.js"></script>
+<!-- favicon icon -->
+<link rel="shortcut icon" href="images/favicon.svg">
+<!-- import fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer="defer" src="script.js"></script>
+</head>
+<body>
+    <!-- header -->
+     <header class="header">
+        <div class="topbar">
+            <div class="container topbar_row">
+                <ul class="topbar_meta">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        45 New Eskton Road, Austria
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                     Sun to Friday: 8:00 am - 7:00 pm
+                    </li>
+                </ul>
+                <ul class="topbar_meta">
+                    <li>
+                    <i class="fa-solid fa-globe"></i>
+                    Language
+                    </li>
+                    <li>
+                        <a href="#">Faq</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="topbar_signup">Sign Up Register</a>
+                    </li>
+                
+
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container navbar_row">
+                <a href="#hero" class="brand">
+                    <span class="brand_mark">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </span>
+                    <span class="brand_name">
+                        Tourm
+                        <span class="brand_dot">.</span>
+                    </span>
+                </a>
+                <input type="checkbox" id="menu-btn" hidden="hidden">
+                <nav class="nav">
+                    <label for="menu-btn" class="nav-close" aria-label="Close menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <ul class="menu">
+                        <li>
+                            <a href="#hero">Home</a>
+                        </li>
+                        <li>
+                            <a href="#plan">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#destinations">Destinations</a>
+                        </li>
+                        <li>
+                            <a href="#categories">Services</a>
+                        </li>
+                        <li>
+                            <a href="#tours">Trip</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#footer">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="navbar_right">
+                    <a href="#" class="navbar-search" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#tours" class="btn btn--accent">
+                        Get Started
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <label for="menu-btn" class="menu-icon" aria-label="Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                <label for="menu-btn" class="nav-overlay"></label>
+            </div>
+        </nav>
+     </header>
+     <!-- herosection -->
+    <section id="hero" class="hero">
+        <div class="container hero_inner">
+            <div class="hero_content">
+                <span class="script">
+                    <img src="images/goyto-star.webp" alt="script_star">
+                    Get unforgettable pleasure with us
+                </span>
+                <h1 class="hero_title">
+                    Travel, Enjoy And
+                    <br>
+                    Live A New
+                <span class="hero_accent">Full Life</span>
+                    </h1>
+                    <p class="hero_text">Discover handpicked tours, breathtaking destinations and unforgettable journeys crafted for every kind of traveller.</p>
+                    <div class="hero_actions">
+                        <a href="#tours" class="btn btn--accent">
+                            Explore Tours
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#categories" class="btn btn--outline">Our Services</a>
+                    </div>
+                    <div class="hero_trust">
+                        <div class="hero_avatars">
+                            <img src="images/testi-1.webp" alt="Traveller">
+                             <img src="images/testi-2.webp" alt="Traveller">
+                              <img src="images/team-3.webp" alt="Traveller">
+                        </div>
+                        <div class="hero_trust-text">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>Trusted by
+                                <strong>2,500+</strong>
+                                happy travellers
+                            </span>
+                        </div>
+                    </div>
+               </div>
+               <div class="hero_visual">
+                <span class="hero_path" aria-hidden="true"></span>
+                <img src="images/goyto-hero.webp" alt="Explore the world" class="hero_college">
+               </div>
+        </div>
+        <form  class="hero_search container" onsubmit="return false">
+            <label class="field">
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Destinations
+                </span>
+                <select>
+                    <option>Where are you going?</option>
+                    <option>Maldives</option>
+                    <option>Thailand</option>
+                    <option>Nepal</option>
+                </select>
+            </label>
+            <label class="field">
+                <span>
+                    <i class="fa-solid fa-person-hiking"></i>
+                    Activity
+                </span>
+                <select>
+                    <option>All Activity</option>
+                    <option>Hicking</option>
+                    <option>Cruises</option>
+                    <option>Wildlife</option>
+                </select>
+            </label>
+            <label class="field">
+                <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Duration
+                </span>
+                 <select>
+                    <option>3 Days - 6 Days</option>
+                     <option>1 Weeks</option>
+                      <option>2 Weeks</option>
+                 </select>
+            </label>
+            <label class="field">
+                <span>
+                    <i class="fa-solid fa-tag"></i>
+                    Price
+                </span>
+                <select>
+                    <option>$500 - $1000</option>
+                     <option>$1000 - $2000</option>
+                </select>
+            </label>
+            <button class="btn btn--accent hero_search-btn">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                 Search
+            </button>
+        </form>
+    </section>
+   <!-- categories -->
+<section id="categories" class="categories">
+    <div class="container">
+
+        <div class="sec-head">
+            <span class="script">Wonderful Place for you</span>
+            <h2 class="sec-title">Tour categories</h2>
+        </div>
+
+        <div class="slider-nav slider-nav--center" data-slider="categories">
+            <button class="slider-nav_btn" data-dir="prev" aria-label="Previous">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button class="slider-nav_btn" data-dir="next" aria-label="Next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper categories-swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a href="#tour" class="cat-card">
+                        <img src="images/category-1.webp" alt="Cruises">
+
+                        <div class="cat-card_body">
+                            <h3>Cruises</h3>
+                            <span>12 Tours</span>
+                        </div>
+
+                        <span class="cat-card_go">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#tour" class="cat-card">
+                        <img src="images/category-2.webp" alt="Hiking">
+
+                        <div class="cat-card_body">
+                            <h3>Hiking</h3>
+                            <span>08 Tours</span>
+                        </div>
+
+                        <span class="cat-card_go">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#tour" class="cat-card">
+                        <img src="images/category-3.webp" alt="Airbirds">
+
+                        <div class="cat-card_body">
+                            <h3>Airbirds</h3>
+                            <span>06 Tours</span>
+                        </div>
+
+                        <span class="cat-card_go">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#tour" class="cat-card">
+                        <img src="images/category-4.webp" alt="Wildlife">
+
+                        <div class="cat-card_body">
+                            <h3>Wildlife</h3>
+                            <span>14 Tours</span>
+                        </div>
+
+                        <span class="cat-card_go">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#tour" class="cat-card">
+                        <img src="images/category-5.webp" alt="Walking">
+
+                        <div class="cat-card_body">
+                            <h3>Walking</h3>
+                            <span>10 Tours</span>
+                        </div>
+
+                        <span class="cat-card_go">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+     <!-- destinations -->
+      <section  id="destinations" class="destinations">
+        <div class="container">
+            <div class="sec-head">
+                <span class="script">Top Destinations</span>
+                <h2 class="sec-title">Popular Destinations</h2>
+            </div>
+            <div class="slider-nav slider-nav--center" data-slider="destinations">
+                <button class="slider-nav_btn" data-dir="prev" aria-label="Previous">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                 <button class="slider-nav_btn" data-dir="next" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="swiper destinations-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="dest-card">
+                            <img src="images/destination-1.webp" alt="Belgium">
+                            <div class="dest-card_info">
+                                <h3>Belgium</h3>
+                                <span>18 Tours</span>
+                            </div>
+                            <a href="#tours" class="dest-card_link">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                     <div class="swiper-slide">
+                        <article class="dest-card">
+                            <img src="images/destination-2.webp" alt="Island">
+                            <div class="dest-card_info">
+                                <h3>Island</h3>
+                                <span>22 Tours</span>
+                            </div>
+                            <a href="#tours" class="dest-card_link">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                     <div class="swiper-slide">
+                        <article class="dest-card dest-card--tall">
+                            <img src="images/destination-3.webp" alt="Maldives">
+                            <div class="dest-card_info">
+                                <h3>Maldives</h3>
+                                <span>27 Tours</span>
+                            </div>
+                            <a href="#tours" class="dest-card_link">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                     <div class="swiper-slide">
+                        <article class="dest-card">
+                            <img src="images/destination-4.webp" alt="Nepal">
+                            <div class="dest-card_info">
+                                <h3>Nepal</h3>
+                                <span>15 Tours</span>
+                            </div>
+                            <a href="#tours" class="dest-card_link">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                     <div class="swiper-slide">
+                        <article class="dest-card">
+                            <img src="images/destination-5.webp" alt="Thailand">
+                            <div class="dest-card_info">
+                                <h3>Thailand</h3>
+                                <span>19 Tours</span>
+                            </div>
+                            <a href="#tours" class="dest-card_link">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- plan -->
+       <section class="plan" id="plan">
+        <div class="container plan_grid">
+            <div class="plan_media">
+                <img src="images/destination-2.webp" alt="Plan your trip" class="plan_img plan_img--a">
+                   <img src="images/gallery-3.webp" alt="Adventure" class="plan_img plan_img--b">
+                   <span class="plan_badge">
+                    <i class="fa-solid fa-plane"></i>
+                    25+ Year Experience
+                   </span>
+            </div>
+            <div class="plan_body">
+                <span class="script">Let's Go Together</span>
+                <h2 class="sec-title"> Plan Your Trip With Us</h2>
+        <p>There are many variation of passages available but the majority have suffered alteration  in  
+        some form,by injected humour or randomised words which don't look even slightly beilevable.</p>
+         <ul class="plan_points">
+            <li>
+                <span class="plan_ic">
+                    <i class="fa-solid fa-compass"></i>
+                </span>
+                <div>
+                    <h4>Exclusive Trip</h4>
+                    <p>There are many variation of passages available but the majority is suffered.</p>
+                </div>
+            </li>
+            <li>
+                <span class="plan_ic">
+                    <i class="fa-solid fa-person-walking-luggage"></i>
+                </span>
+                <div>
+                    <h4>Professional Guide</h4>
+                    <p>There are many variation of passages available but the majority is suffered.</p>
+                </div>
+            </li>
+         </ul>
+         <a href="#tours" class=" btn btn--accent">
+            Learn More
+            <i class="fa-solid fa-arrow-right"></i>
+         </a>
+            </div>
+        </div>
+       </section>
+       <!-- tours -->
+        <section class="tours" id="tours">
+            <div class="container">
+                <div class="sec-head">
+                <span class="script">Best Recommanded Places </span>
+                 <h2 class="sec-title">Popular Tours we are offer all</h2>
+                <p class="sec-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae 
+                 expedita placeat quas dolore iusto,debitis, repellat numquam atque quod optio accusamus 
+                 modi beatae minima mollitia alias tenetur impedit et.</p>
+                </div>
+                <div class="slider-nav slider-nav--center" data-slider="tours">
+                    <button class="slider-nav_btn" data-dir="prev" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                      <button class="slider-nav_btn" data-dir="next" aria-label="Next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="swiper tours-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="tour-card">
+                                <div class="tour-card_media">
+                                    <img src="images/tour-1.webp" alt="Okavango tour">
+                                    <span class="tour-card_days">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        5 Days
+                                    </span>
+                                    <button  class="tour-card_fav" aria-label="save">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="tour-card_body">
+                                    <div class="tour-card_loc">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Okavango, Botswana
+                                    </div>
+                                    <h3>
+                                        <a href="#">Okavango Peak Hill Trek Adventure</a>
+                                    </h3>
+                                     <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8 (2.4k Review)</span>
+                            </div>
+                            <div class="tour-card_foot">
+                                <span class="tour-card_price">
+                                    <small>From</small>
+                                    $569.00
+                                    <small>/Person</small>
+                                </span>
+                                <a href="#" class="tour-card_book book-now">
+                                    Book Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="tour-card">
+                                <div class="tour-card_media">
+                                    <img src="images/tour-2.webp" alt="Langtang tour">
+                                    <span class="tour-card_days">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        3 Days
+                                    </span>
+                                    <button  class="tour-card_fav" aria-label="save">
+                                       <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="tour-card_body">
+                                    <div class="tour-card_loc">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Langtang, Nepal
+                                    </div>
+                                    <h3>
+                                        <a href="#">Langtang Valley Trakking Journey</a>
+                                    </h3>
+                                     <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9 (1.8k Review)</span>
+                            </div>
+                            <div class="tour-card_foot">
+                                <span class="tour-card_price">
+                                    <small>From</small>
+                                    $600.00
+                                    <small>/Person</small>
+                                </span>
+                                <a href="#" class="tour-card_book book-now">
+                                    Book Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="tour-card">
+                                <div class="tour-card_media">
+                                    <img src="images/tour-4.webp" alt="Pokhara tour">
+                                    <span class="tour-card_days">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        6 Days
+                                    </span>
+                                    <button  class="tour-card_fav" aria-label="save">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="tour-card_body">
+                                    <div class="tour-card_loc">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Pokhara, Nepal
+                                    </div>
+                                    <h3>
+                                        <a href="#">Short Track around Pokhara Lake </a>
+                                    </h3>
+                                     <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8 (2.4k Review)</span>
+                            </div>
+                            <div class="tour-card_foot">
+                                <span class="tour-card_price">
+                                    <small>From</small>
+                                    $250.00
+                                    <small>/Person</small>
+                                </span>
+                                <a href="#" class="tour-card_book book-now">
+                                    Book Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="tour-card">
+                                <div class="tour-card_media">
+                                    <img src="images/tour-1.webp" alt="Maldives tour">
+                                    <span class="tour-card_days">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        4 Days
+                                    </span>
+                                    <button  class="tour-card_fav" aria-label="save">
+                                       <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="tour-card_body">
+                                    <div class="tour-card_loc">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                      Male`, Maldives
+                                    </div>
+                                    <h3>
+                                        <a href="#">Maldives Island Paradise Escape</a>
+                                    </h3>
+                                     <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>5..0 (3.1k Review)</span>
+                            </div>
+                            <div class="tour-card_foot">
+                                <span class="tour-card_price">
+                                    <small>From</small>
+                                    $490.00
+                                    <small>/Person</small>
+                                </span>
+                                <a href="#" class="tour-card_book book-now">
+                                    Book Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery -->
+         <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="script">Make Your Tour More  Pleasure</span>
+                    <h2 class="sec-title">Recent Gallery</h2>
+                </div>
+                <div class="gallery-grid">
+                    <a href="#lb-1" class="gallery_item">
+                        <img src="images/gallery-1.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                      <a href="#lb-2" class="gallery_item">
+                        <img src="images/gallery-2.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                      <a href="#lb-3" class="gallery_item">
+                        <img src="images/gallery-4.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                      <a href="#lb-4" class="gallery_item">
+                        <img src="images/gallery-3.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                      <a href="#lb-5" class="gallery_item">
+                        <img src="images/gallery-5.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                      <a href="#lb-6" class="gallery_item">
+                        <img src="images/gallery-6.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                      <a href="#lb-7" class="gallery_item">
+                        <img src="images/gallery-7.webp" alt="gallery">
+                        <span class="gallery_zoom">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- lightbox -->
+             <div class="lightbox" id="lb-1">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-1.webp" alt="Gallery">
+             </div>
+              <div class="lightbox" id="lb-2">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-2.webp" alt="Gallery">
+             </div>
+              <div class="lightbox" id="lb-3">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-4.webp" alt="Gallery">
+             </div>
+              <div class="lightbox" id="lb-4">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-3.webp" alt="Gallery">
+             </div>
+              <div class="lightbox" id="lb-5">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-5.webp" alt="Gallery">
+             </div>
+              <div class="lightbox" id="lb-6">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-6.webp" alt="Gallery">
+             </div>
+              <div class="lightbox" id="lb-7">
+                <a href="#gallery" class="lightbox_backdrop" aria-label="Close"></a>
+                <a href="#gallery" class="lightbox_close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <img src="images/gallery-7.webp" alt="Gallery">
+             </div>
+         </section>
+         <!-- stats -->
+          <section class="stats">
+            <div class="container stats_row">
+                <div class="stat">
+                    <div class="stat_num">
+                        <span class="count" data-target="12">0</span>
+                    </div>
+                    <p>Years Experience</p>
+                </div>
+                 <div class="stat">
+                    <div class="stat_num">
+                        <span class="count" data-target="97">0</span>
+                        %
+                    </div>
+                    <p>Retention Rate</p>
+                </div>
+                  <div class="stat">
+                    <div class="stat_num">
+                        <span class="count" data-target="8">0</span>
+                        k
+                    </div>
+                    <p>Tour Completed</p>
+                </div>
+                 <div class="stat">
+                    <div class="stat_num">
+                        <span class="count" data-target="19">0</span>
+                        k
+                    </div>
+                    <p>Happy Travellers</p>
+                </div>
+            </div>
+          </section>
+         
+        <!-- guides -->
+<section id="guides" class="guides">
+    <div class="container">
+
+        <div class="sec-head">
+            <span class="script">Meet with Guide</span>
+            <h2 class="sec-title">Tour Guide</h2>
+        </div>
+
+        <!-- Guide Navigation -->
+        <div class="slider-nav slider-nav--center" data-slider="guides">
+
+            <button
+                class="slider-nav_btn"
+                data-dir="prev"
+                aria-label="Previous"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button
+                class="slider-nav_btn"
+                data-dir="next"
+                aria-label="Next"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <!-- Guides Swiper -->
+        <div class="swiper guides-swiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- Guide 1 -->
+                <div class="swiper-slide">
+                    <article class="guide-card">
+
+                        <div class="guide-card_media">
+                            <img
+                                src="images/team-1.webp"
+                                alt="Jane Cooper"
+                            >
+
+                            <div class="guide-card_social">
+
+                                <a href="#" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" aria-label="X">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a href="#" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="guide-card_body">
+                            <h3>Jane Cooper</h3>
+                            <span>Tour Guide</span>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- Guide 2 -->
+                <div class="swiper-slide">
+                    <article class="guide-card">
+
+                        <div class="guide-card_media">
+                            <img
+                                src="images/team-2.webp"
+                                alt="Guy Hawkins"
+                            >
+
+                            <div class="guide-card_social">
+
+                                <a href="#" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" aria-label="X">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a href="#" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="guide-card_body">
+                            <h3>Guy Hawkins</h3>
+                            <span>Tour Guide</span>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- Guide 3 -->
+                <div class="swiper-slide">
+                    <article class="guide-card">
+
+                        <div class="guide-card_media">
+                            <img
+                                src="images/team-3.webp"
+                                alt="Jenny Wilson"
+                            >
+
+                            <div class="guide-card_social">
+
+                                <a href="#" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" aria-label="X">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a href="#" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="guide-card_body">
+                            <h3>Jenny Wilson</h3>
+                            <span>Tour Guide</span>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <!-- Guide 4 -->
+                <div class="swiper-slide">
+                    <article class="guide-card">
+
+                        <div class="guide-card_media">
+                            <img
+                                src="images/team-4.webp"
+                                alt="Jacob Jones"
+                            >
+
+                            <div class="guide-card_social">
+
+                                <a href="#" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" aria-label="X">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a href="#" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="guide-card_body">
+                            <h3>Jacob Jones</h3>
+                            <span>Tour Guide</span>
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonials -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+
+        <div class="sec-head">
+            <span class="script">Testimonials</span>
+            <h2 class="sec-title">What Clients Say About Us</h2>
+        </div>
+
+        <!-- Navigation -->
+        <div class="slider-nav slider-nav--center" data-slider="testimonials">
+
+            <button
+                class="slider-nav_btn"
+                data-dir="prev"
+                aria-label="Previous testimonial"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button
+                class="slider-nav_btn"
+                data-dir="next"
+                aria-label="Next testimonial"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <!-- Testimonials Swiper -->
+        <div class="swiper testimonials-swiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+
+                    <figure class="testi-card">
+
+                        <img
+                            src="images/testi-quote.svg"
+                            alt="Quote"
+                        >
+
+                        <blockquote>
+                            The home boasts sleek, contemporary architecture
+                            with clean lines and expansive windows, allowing
+                            natural light to flood the interiors throughout
+                            the passive design.
+                        </blockquote>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="testi-card_author">
+
+                            <img
+                                src="images/testi-1.webp"
+                                alt="Maria Doe"
+                            >
+
+                            <div>
+                                <h4>Maria Doe</h4>
+                                <span>Traveller</span>
+                            </div>
+
+                        </div>
+
+                    </figure>
+
+                </div>
+
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+
+                    <figure class="testi-card">
+
+                        <img
+                            src="images/testi-quote.svg"
+                            alt="Quote"
+                        >
+
+                        <blockquote>
+                            Solar panels adorn the roof, harnessing renewable
+                            energy to power the home, while large windows
+                            maximise natural light and reduce the need for
+                            artificial lighting.
+                        </blockquote>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="testi-card_author">
+
+                            <img
+                                src="images/testi-2.webp"
+                                alt="Angelina Rose"
+                            >
+
+                            <div>
+                                <h4>Angelina Rose</h4>
+                                <span>Traveller</span>
+                            </div>
+
+                        </div>
+
+                    </figure>
+
+                </div>
+
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+
+                    <figure class="testi-card">
+
+                        <img
+                            src="images/testi-quote.svg"
+                            alt="Quote"
+                        >
+
+                        <blockquote>
+                            From the first booking to the final farewell,
+                            every detail was handled with care. The guides
+                            were knowledgeable and the itinerary was perfectly
+                            paced for our family.
+                        </blockquote>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="testi-card_author">
+
+                            <img
+                                src="images/testi-1.webp"
+                                alt="Marcus Lee"
+                            >
+                            <div>
+                                <h4>Marcus Lee</h4>
+                                <span>Traveller</span>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blogs -->
+ <section id="blog" class="blog">
+    <div class="container">
+        <div class="sec-head sec-head--row">
+            <div>
+                <span class="script">From The Blog</span>
+                <h2 class="sec-title">News &amp; Articles From Tours</h2>
+            </div>
+            <a href="#" class="btn btn--outline">
+                See More
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="blog_grid">
+            <article class="post-card">
+                <a href="" class="post-card_media">
+                    <img src="images/blog-1.webp" alt="Post">
+                    <span class="post-card_date">
+                        <strong>15</strong>
+                        July
+                    </span>
+                </a>
+                <div class="post-card_body">
+                    <div class="post-card_meta">
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            By Admin
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            2 Min Read
+                        </span>
+                    </div>
+                    <h3>
+                        <a href="#">Enrich Your Mind Envision Your Future Education For Success</a>
+                    </h3>
+                    <a href="#" class="post-card_more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+              <article class="post-card">
+                <a href="" class="post-card_media">
+                    <img src="images/blog-2.webp" alt="Post">
+                    <span class="post-card_date">
+                        <strong>15</strong>
+                        July
+                    </span>
+                </a>
+                <div class="post-card_body">
+                    <div class="post-card_meta">
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            By Admin
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            3 Min Read
+                        </span>
+                    </div>
+                    <h3>
+                        <a href="#">Exploring The Green Space of Realer Residence Marmony</a>
+                    </h3>
+                    <a href="#" class="post-card_more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+              <article class="post-card">
+                <a href="" class="post-card_media">
+                    <img src="images/blog-3.webp" alt="Post">
+                    <span class="post-card_date">
+                        <strong>15</strong>
+                        July
+                    </span>
+                </a>
+                <div class="post-card_body">
+                    <div class="post-card_meta">
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            By Admin
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            4 Min Read
+                        </span>
+                    </div>
+                    <h3>
+                        <a href="#">Living sustainability - A Day in the Life at Realer Residence</a>
+                    </h3>
+                    <a href="#" class="post-card_more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+ </section>
+ <!-- newsletter -->
+  <section class="newsletter">
+    <div class="container newsletter_inner">
+        <div class="newsletter_text">
+            <span class="script script--light">Newsletter</span>
+            <h2 class="sec-title">Get Update The Latest Newsletter</h2>
+        </div>
+       <form action="" class="newsletter_form">
+    <i class="fa-solid fa-envelope"></i>
+    <input type="email" placeholder="Enter your email address" required>
+    <button class="btn btn--accent" type="submit">
+        Subscribe Now
+    </button>
+</form>
+<p class="subscribe-message"></p>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="footer" class="footers">
+    <div class="footer_top">
+        <div class="footer_grid">
+            <div class="footer_col footer_about">
+                <a href="#hero" class="brand footer_logo">
+                    <span class="brand_mark">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </span>
+                    <span class="brand_name brand_name--light">
+                        Tours
+                        <span class="brand_dot">.</span>
+                    </span>
+                </a>
+                <p>Rapidiously mycardinate cross-platform intellectual capital model. Appropriately create
+                    interactive infrastructures.
+                </p>
+                <div class="footer_social">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                     <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                     <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                     <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_col">
+                <h4>Quick Links</h4>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#hero">About us</a>
+                    </li>
+                     <li>
+                        <a href="#tours">Tour Booking</a>
+                    </li>
+                     <li>
+                        <a href="#destinations">Destinations</a>
+                    </li>
+                     <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                     <li>
+                        <a href="#blog">Latest News</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Get in Touch</h4>
+                <ul class="footer_contact">
+                    <li>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="tel:+1234567890">+1 234 567 890</a>
+                    </li>
+                     <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@tourm.com">info@tourm.com</a>
+                    </li>
+                     <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        45 News Eskton Road, Austria
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Instagram Post</h4>
+                <div class="footer_insta">
+                    <a href="#">
+                 <img src="images/insta-1.webp" alt="Instagram">
+                    </a>
+                     <a href="#">
+                 <img src="images/insta-2.webp" alt="Instagram">
+                    </a>
+                     <a href="#">
+                 <img src="images/insta-3.webp" alt="Instagram">
+                    </a>
+                     <a href="#">
+                 <img src="images/insta-4.webp" alt="Instagram">
+                    </a>
+                     <a href="#">
+                 <img src="images/insta-5.webp" alt="Instagram">
+                    </a>
+                     <a href="#">
+                 <img src="images/insta-6.webp" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bar">
+        <div class="container footer_bar-row">
+            <p>
+                Copyright 2026
+                <span>GTI</span>
+                All Rights Reserved
+            </p>
+            <img src="images/cards.webp" alt="Payment methods" class="footer_cards">
+        </div>
+    </div>
+    </div>
+    </footer>
+</body>
+</html>
